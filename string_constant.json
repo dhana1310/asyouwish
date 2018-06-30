@@ -1,0 +1,327 @@
+{
+	"FB_LINK": "https://www.facebook.com/ASYOUWISH12345/",
+	"INSTA_LINK": "https://www.instagram.com/my_asyouwish/",
+	"AS_YOU_WISH_MAIL": "asyouwish999s@gmail.com",
+	"TAG_LINE": "You Desire, We Deliver",
+	"MOBILE": "(+91) 86 97 458727",
+	"GOAL": "To satisfy the customer's requirement without any compromise on quality and services in the stipulated time.",
+	"HELP_LIST": [
+		{
+			"type": "Contact",
+			"link": "contact.php"
+		},
+		{
+			"type": "FAQs",
+			"link": "word/AsYouWishFAQs.docx"
+		}
+	],
+	"TAB_LIST": [
+		{
+			"tab": "Home",
+			"link": "index.php"
+		},
+		{
+			"tab": "Products",
+			"link": "product.php"
+		},
+		{
+			"tab": "About",
+			"link": "about.php"
+		},
+		{
+			"tab": "Contact",
+			"link": "contact.php"
+		}
+	],
+	"PRODUCT_LIST_FOOTER_1": [
+		{
+			"product": "Mugs",
+			"link": "product_mug.php"
+		},
+		{
+			"product": "Alphabets",
+			"link": "product_alphabet.php"
+		},
+		{
+			"product": "Shadow Box",
+			"link": "product_shadowbox.php"
+		},
+		{
+			"product": "Cushions",
+			"link": "product_cushion.php"
+		},
+		{
+			"product": "T-shirts",
+			"link": "product_tees.php"
+		},
+		{
+			"product": "PhotoFrames",
+			"link": "product_photoframe.php"
+		},
+		{
+			"product": "Bedsheets",
+			"link": "product_bedsheet.php"
+		}
+	],
+	"PRODUCT_LIST_FOOTER_2": [
+		{
+			"product": "Curtains",
+			"link": "product_curtain.php"
+		},
+		{
+			"product": "Pendants",
+			"link": "product_pendant.php"
+		},
+		{
+			"product": "Keychains",
+			"link": "product_keychains.php"
+		},
+		{
+			"product": "Wall Memories",
+			"link": "product_wallhanging.php"
+		},
+		{
+			"product": "Mobilecovers",
+			"link": "product_backcover.php"
+		},
+		{
+			"product": "Rings",
+			"link": "product_ring.php"
+		},
+		{
+			"product": "Towels",
+			"link": "product_towel.php"
+		}
+	],
+	"PRODUCTS_LIST_CATEGORIES": [
+		{
+			"product": "Mugs",
+			"link": "product_mug.php",
+			"folder":"mugs",
+			"file_name_prefix":"mug",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#MUG00",
+			"number_of_images": 8
+		},
+		{
+			"product": "Alphabets",
+			"link": "product_alphabet.php",
+			"folder":"alphabets",
+			"file_name_prefix":"alphabets",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#ALP00",
+			"number_of_images": 17
+		},
+		{
+			"product": "Shadow Box",
+			"link": "product_shadowbox.php",
+			"folder":"shadowboxes",
+			"file_name_prefix":"box",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#SHB00",
+			"number_of_images": 2
+		},
+		{
+			"product": "Cushions",
+			"link": "product_cushion.php",
+			"folder":"pillows",
+			"file_name_prefix":"cushion",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#CUS00",
+			"number_of_images": 17
+		},
+		{
+			"product": "T-shirts",
+			"link": "product_tees.php",
+			"folder":"tees",
+			"file_name_prefix":"tees",
+			"file_name_suffix":"_720_800.jpg",
+			"product_code":"#TES00",
+			"number_of_images": 24
+		},
+		{
+			"product": "PhotoFrames",
+			"link": "product_photoframe.php",
+			"folder":"photoframes",
+			"file_name_prefix":"photo_frames_",
+			"file_name_suffix":"_720_720.jpg",
+			"product_code":"#PHF00",
+			"number_of_images": 27
+		},
+		{
+			"product": "Bedsheets",
+			"link": "product_bedsheet.php",
+			"folder":"bedsheets",
+			"file_name_prefix":"bedsheet",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#BDS00",
+			"number_of_images": 6
+		},
+		{
+			"product": "Curtains",
+			"link": "product_curtain.php",
+			"folder":"curtains",
+			"file_name_prefix":"curtain",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#CUR00",
+			"number_of_images": 6
+		},
+		{
+			"product": "Pendants",
+			"link": "product_pendant.php",
+			"folder":"pendants",
+			"file_name_prefix":"pendant",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#PDT00",
+			"number_of_images": 8
+		},
+		{
+			"product": "Keychains",
+			"link": "product_keychains.php",
+			"folder":"keychains",
+			"file_name_prefix":"keychain",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#KCH00",
+			"number_of_images": 9
+		},
+		{
+			"product": "Wall Memories",
+			"link": "product_wallhanging.php",
+			"folder":"wall_hangings",
+			"file_name_prefix":"wall_hanging_",
+			"file_name_suffix":"_720_800.jpg",
+			"product_code":"#WHG00",
+			"number_of_images": 15
+		},
+		{
+			"product": "Mobilecovers",
+			"link": "product_backcover.php",
+			"folder":"backcover",
+			"file_name_prefix":"backcover",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#MBC00",
+			"number_of_images": 13
+		},
+		{
+			"product": "Rings",
+			"link": "product_ring.php",
+			"folder":"rings",
+			"file_name_prefix":"ring",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#RNG00",
+			"number_of_images": 5
+		},
+		{
+			"product": "Towels",
+			"link": "product_towel.php",
+			"folder":"towels",
+			"file_name_prefix":"towel",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#TOW00",
+			"number_of_images": 9
+		}
+	],
+	"SLIDER_2":[
+		{
+			"product":"Mobile Covers",
+			"cost":"150 - 500",
+			"file_name":"backcover_720_960.jpg",
+			"link":"product_backcover.php"
+		},
+		{
+			"product":"Customized Bedsheet",
+			"cost":"1000 - 2000",
+			"file_name":"bedsheet_720_960.jpg",
+			"link":"product_bedsheet.php"
+		},
+		{
+			"product":"Wooden Frame for your home",
+			"cost":"1000 - 2000",
+			"file_name":"wooden_frame_720_960.jpg",
+			"link":"product_photoframe.php"
+		},
+		{
+			"product":"Customized Ring",
+			"cost":"200 - 500",
+			"file_name":"ring_720_960.jpg",
+			"link":"product_ring.php"
+		},
+		{
+			"product":"Printed Tees",
+			"cost":"350 - 600",
+			"file_name":"valentines_special_tees_720_960.jpg",
+			"link":"product_tees.php"
+		},
+		{
+			"product":"Customized towel",
+			"cost":"600 - 1000",
+			"file_name":"towel_720_960.jpg",
+			"link":"product_towel.php"
+		},
+		{
+			"product":"Curtains",
+			"cost":"500-2000",
+			"file_name":"curtain_720_960.jpg",
+			"link":"product_curtain.php"
+		},
+		{
+			"product":"Wall Hangings",
+			"cost":"1000 - 5000",
+			"file_name":"wall_hanging_720_960.jpg",
+			"link":"product_wallhanging.php"
+		}
+		
+	],
+	"CUSTOMER_REVIEW": [
+		{
+			"name": "SHRUTI",
+			"comment": "It is amazing!!!!Magic mug is just wow",
+			"file_name": "customer_mug_960_960.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "My husband gifting these amazing gift. Thanks As You Wish!!!",
+			"file_name": "customer_pillow_720_720.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "Completely amazing work..loved the cake on my bday..more special coz of the pic on it!! TASTE 5STAR LOOK 5 STAR Thankyou so much As You Wish",
+			"file_name": "customer_cake_579_579.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "Our fest tees ..just amazing work Thanks  As You Wish",
+			"file_name": "customer_tees_488_488.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "Thankyou to As You Wish Ceo for this wonderful bday gift.loved ittt!!!",
+			"file_name": "customer_mug_765_765.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "BFF tees on my friend's bday was amazing..Good work As You Wish",
+			"file_name": "customer_640_640.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "Thankyou to As u wish for such an amazing cake",
+			"file_name": "customer_562_562.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "Thankyou for this wonderful and cherishing pillow As u wish….Will cherish through lifetime.. I loved it .Its simply wowsome!!!",
+			"file_name": "customer_481_481.png"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "I am a regular customer of AS YOU WISH. ITS DELIVERABLES ARE ALL HAWTTT!!! SIMPLY WHAT A CUSTOMER DEMANDS.",
+			"file_name": "customer_cushion_540_540.jpg"
+		},
+		{
+			"name": "SHRUTI",
+			"comment": "It’s really wonderful..one kind of memory …Thankyou",
+			"file_name": "customer_863_863.jpg"
+		}
+	]
+}

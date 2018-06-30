@@ -1,3 +1,10 @@
+<?php
+$string = file_get_contents("string_constant.json");
+$option = json_decode($string);
+
+$PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,149 +44,7 @@
 
 <body class="animsition">
 
-	<!-- Header -->
-	<header class="header1">
-		<!-- Header desktop -->
-		<div class="container-menu-header">
-			<div class="topbar">
-				<div class="topbar-social">
-					<a href="https://www.facebook.com/ASYOUWISH12345/" class="topbar-social-item fa fa-facebook" target="_blank"></a>
-					<a href="https://www.instagram.com/my_asyouwish/" class="topbar-social-item fa fa-instagram"></a>
-					<!-- <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-						<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-						<a href="#" class="topbar-social-item fa fa-youtube-play"></a> -->
-				</div>
-
-				<span class="topbar-child1">
-					<b>You Desire, We Deliver</b>
-				</span>
-
-				<div class="topbar-child2">
-					<span class="topbar-email">
-						<b>asyouwish999s@gmail.com</b>
-					</span>
-				</div>
-			</div>
-
-			<div class="wrap_header">
-				<!-- Logo -->
-				<a href="index.html" class="logo">
-					<img src="images/icons/asyouwish_logo.jpg" alt="IMG-LOGO">
-				</a>
-
-				<!-- Menu -->
-				<div class="wrap_menu">
-					<nav class="menu">
-						<ul class="main_menu">
-							<li>
-								<a href="index.html">Home</a>
-								<!-- <ul class="sub_menu">
-										<li><a href="index.html">Homepage V1</a></li>
-										<li><a href="home-02.html">Homepage V2</a></li>
-										<li><a href="home-03.html">Homepage V3</a></li>
-									</ul> -->
-							</li>
-							<li class="sale-noti">
-								<a href="product.html">Products</a>
-							</li>
-
-							<li>
-								<a href="about.html">About</a>
-							</li>
-
-							<li>
-								<a href="contact.html">Contact</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-
-		<!-- Header Mobile -->
-		<div class="wrap_header_mobile">
-			<!-- Logo moblie -->
-			<a href="index.html" class="logo-mobile">
-				<img src="images/icons/asyouwish_logo.jpg" alt="IMG-LOGO">
-			</a>
-
-			<!-- Button show menu -->
-			<div class="btn-show-menu">
-				<!-- Header Icon mobile -->
-
-				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</div>
-			</div>
-		</div>
-
-		<!-- Menu Mobile -->
-		<div class="wrap-side-menu">
-			<nav class="side-menu">
-				<ul class="main-menu">
-					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-						<span class="topbar-child1">
-							You Desire, We Deliver
-						</span>
-					</li>
-
-					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
-						<div class="topbar-child2-mobile">
-							<span class="topbar-email">
-								asyouwish999s@gmail.com
-							</span>
-						</div>
-					</li>
-
-					<li class="item-topbar-mobile p-l-10">
-						<div class="topbar-social-mobile">
-							<a href="https://www.facebook.com/ASYOUWISH12345/" class="topbar-social-item fa fa-facebook"></a>
-							<a href="https://www.instagram.com/my_asyouwish/" class="topbar-social-item fa fa-instagram"></a>
-							<!-- <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
-								<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
-								<a href="#" class="topbar-social-item fa fa-youtube-play"></a> -->
-						</div>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="index.html">Home</a>
-						<!-- <ul class="sub-menu">
-								<li><a href="index.html">Homepage V1</a></li>
-								<li><a href="home-02.html">Homepage V2</a></li>
-								<li><a href="home-03.html">Homepage V3</a></li>
-							</ul>
-							<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i> -->
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="product.html">Products</a>
-					</li>
-
-					<!-- <li class="item-menu-mobile">
-							<a href="product.html">Sale</a>
-						</li>
-	
-						<li class="item-menu-mobile">
-							<a href="cart.html">Features</a>
-						</li>
-	
-						<li class="item-menu-mobile">
-							<a href="blog.html">Blog</a>
-						</li> -->
-
-					<li class="item-menu-mobile">
-						<a href="about.html">About</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+			<?php include 'header.php'; ?>
 
 	<!-- Title Page -->
 	<!-- <section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
@@ -204,72 +69,19 @@
 						</h4>
 
 						<ul class="p-b-54">
-							<li class="p-t-4">
-								<a href="product_mug.html" class="s-text13 active1">
-									Mugs
-								</a>
-							</li>
 
-							<li class="p-t-4">
-								<a href="product_cushion.html" class="s-text13">
-									Cushions
-								</a>
-							</li>
+				<?php 
 
-							<li class="p-t-4">
-								<a href="product_tees.html" class="s-text13">
-									T-shirts
-								</a>
-							</li>
-
-							<li class="p-t-4">
-								<a href="product_photoframe.html" class="s-text13">
-									PhotoFrames
-								</a>
-							</li>
-
-							<li class="p-t-4">
-								<a href="product_bedsheet.html" class="s-text13">
-									Bedsheets
-								</a>
-							</li>
-
-							<li class="p-t-4">
-								<a href="product_curtain.html" class="s-text13">
-									Curtains
-								</a>
-							</li>
-							<li class="p-t-4">
-								<a href="product_pendant.html" class="s-text13">
-									Pendants
-								</a>
-							</li>
-							<li class="p-t-4">
-								<a href="product_keychains.html" class="s-text13">
-									Keychains
-								</a>
-							</li>
-							<li class="p-t-4">
-								<a href="product_wallhanging.html" class="s-text13">
-									WallMemories
-								</a>
-							</li>
-							<li class="p-t-4">
-								<a href="product_backcover.html" class="s-text13">
-									Mobilecovers
-								</a>
-							</li>
-							<li class="p-t-4">
-								<a href="product_ring.html" class="s-text13">
-									Rings
-								</a>
-							</li>
-							<li class="p-t-4">
-								<a href="product_towel.html" class="s-text13">
-									Towels
-								</a>
-							</li>
-						</ul>
+				for($i=0; $i < sizeof($PRODUCTS_LIST_CATEGORIES); $i++){
+				?>
+				<li class="p-t-4">
+					<form action="product.php" method="GET">
+						<input type="submit" class="s-text13 active1" name="product_selected" value="<?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?>">
+					</form>
+				</li>
+				<?php }
+				?>
+				</ul>
 
 						<!--  -->
 						<!-- <h4 class="m-text14 p-b-32">
@@ -357,14 +169,30 @@
 					<!-- Product -->
 					<div class="row">
 							<?php 
-							for($i = 1; $i <= 8 ; $i++){
+							for($i = 0; $i < sizeof($PRODUCTS_LIST_CATEGORIES) ; $i++){
+								if(isset($_GET['product_selected'])){
+									if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,$_GET['product_selected']) != 0) {
+										continue;
+									}
+								} else {
+
+									if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,"Mugs") != 0) {
+										continue;
+									}
+								}
+								$folder = $PRODUCTS_LIST_CATEGORIES[$i]->folder;
+								$prefix = $PRODUCTS_LIST_CATEGORIES[$i]->file_name_prefix;
+								$suffix = $PRODUCTS_LIST_CATEGORIES[$i]->file_name_suffix;
+								
+								for($j = 1; $j <= $PRODUCTS_LIST_CATEGORIES[$i]->number_of_images ; $j++){
+									
 						?>
 
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<!-- Block2 -->
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/mugs/mug<?php echo $i; ?>_720_960.jpg" alt="IMG-PRODUCT">
+									<img src="images/<?php echo $folder.'/'.$prefix.$j.$suffix; ?>" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<!-- <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -383,18 +211,18 @@
 								<div class="block2-txt p-t-20">
 									<span class="block2-name dis-block s-text3 p-b-5" align="center">
 										<?php 
-										if($i < 10){
-											echo '#MUG000'.$i;
+										if($j < 10){
+											echo $PRODUCTS_LIST_CATEGORIES[$i]->product_code.'0'.$j;
 										}
 										else{
-											echo '#MUG00'.$i;
+											echo $PRODUCTS_LIST_CATEGORIES[$i]->product_code.$j;
 										}
 										?>
 									</span>
 								</div>
 							</div>
 						</div>
-							<?php } ?>
+							<?php }} ?>
 					</div>
 
 					<!-- Pagination -->
@@ -407,178 +235,7 @@
 		</div>
 	</section>
 
-
-	<!-- Footer -->
-	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
-		<div class="flex-w p-b-90">
-			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
-				<h4 class="s-text12 p-b-30">
-					GET IN TOUCH
-				</h4>
-
-				<div>
-					<p class="s-text7 w-size27">
-						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
-					</p>
-
-					<div class="flex-m p-t-30">
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-				<h4 class="s-text12 p-b-30">
-					Categories
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Men
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Women
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Dresses
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Sunglasses
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-				<h4 class="s-text12 p-b-30">
-					Links
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Search
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							About Us
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Contact Us
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
-				<h4 class="s-text12 p-b-30">
-					Help
-				</h4>
-
-				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Track Order
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Returns
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							Shipping
-						</a>
-					</li>
-
-					<li class="p-b-9">
-						<a href="#" class="s-text7">
-							FAQs
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="w-size8 p-t-30 p-l-15 p-r-15 respon3">
-				<h4 class="s-text12 p-b-30">
-					Newsletter
-				</h4>
-
-				<form>
-					<div class="effect1 w-size9">
-						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
-						<span class="effect1-line"></span>
-					</div>
-
-					<div class="w-size2 p-t-20">
-						<!-- Button -->
-						<button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-							Subscribe
-						</button>
-					</div>
-
-				</form>
-			</div>
-		</div>
-
-		<div class="t-center p-l-15 p-r-15">
-			<a href="#">
-				<img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
-			</a>
-
-			<a href="#">
-				<img class="h-size2" src="images/icons/visa.png" alt="IMG-VISA">
-			</a>
-
-			<a href="#">
-				<img class="h-size2" src="images/icons/mastercard.png" alt="IMG-MASTERCARD">
-			</a>
-
-			<a href="#">
-				<img class="h-size2" src="images/icons/express.png" alt="IMG-EXPRESS">
-			</a>
-
-			<a href="#">
-				<img class="h-size2" src="images/icons/discover.png" alt="IMG-DISCOVER">
-			</a>
-
-			<div class="t-center s-text8 p-t-20">
-				Copyright © 2018 All rights reserved. | This template is made with
-				<i class="fa fa-heart-o" aria-hidden="true"></i> by
-				<a href="https://colorlib.com" target="_blank">Colorlib</a>
-			</div>
-		</div>
-	</footer>
-
-
+			<?php include 'footer.php'; ?>
 
 	<!-- Back to top -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">

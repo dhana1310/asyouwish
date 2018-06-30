@@ -12,10 +12,8 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
  define("MAIL_ID", $option->MAIL_ID);
  define("MAIL_PASSWORD", $option->MAIL_PASSWORD);
 
-echo 'i am out';
 if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
 
-    echo 'i am in';
     $name = $_POST['name'];
     $email = $_POST['email'];
     $msg = nl2br($_POST['message']);
