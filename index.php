@@ -35,6 +35,30 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
+	<script language="javascript"> 
+   		function getSelectedProductGet( params) {
+			path = "product.php";
+			method = "get"; // Set method to post by default if not specified.
+
+			var form = document.createElement("form");
+			form.setAttribute("method", method);
+			form.setAttribute("action", path);
+
+			for(var key in params) {
+				if(params.hasOwnProperty(key)) {
+					var hiddenField = document.createElement("input");
+					hiddenField.setAttribute("type", "hidden");
+					hiddenField.setAttribute("name", key);
+					hiddenField.setAttribute("value", params[key]);
+
+					form.appendChild(hiddenField);
+				}
+			}
+
+			document.body.appendChild(form);
+			form.submit();
+		}
+	</script>
 </head>
 
 <body class="animsition">
@@ -45,63 +69,29 @@
 	<section class="slide1">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1 item1-slick1" style="background-image: url(images/master-slide-01.jpg);">
+			<?php 
+				for($i=1; $i < sizeof($MASTER_SLIDE); $i++){
+			?>
+				<div class="item-slick1 item1-slick1" style="background-image: url(images/master_slide/<?php echo $MASTER_SLIDE[$i]->file_name_prefix.$i.$MASTER_SLIDE[$i]->file_name_suffix ?>);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" style="color:black;" data-appear="fadeInDown">
+						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" <?php echo $MASTER_SLIDE[$i]->custom_style_caption1_slide1 ?> data-appear="fadeInDown">
 							As you wish presents
 						</span>
 
-						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" style="color:black;" data-appear="fadeInDown">
-							Printed Mug
+						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" <?php echo $MASTER_SLIDE[$i]->custom_style_caption2_slide1 ?> data-appear="fadeInDown">
+						<?php echo $MASTER_SLIDE[$i]->product ?>
 						</h2>
 
-						<div class="wrap-btn-slide1 w-size1 animated visible-false" style="color:black;" data-appear="fadeInDown">
+						<div class="wrap-btn-slide1 w-size1 animated visible-false" <?php echo $MASTER_SLIDE[$i]->wrap_btn_slide1 ?> data-appear="fadeInDown">
 							<!-- Button -->
-							<a href="product_mug.php" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+							<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $MASTER_SLIDE[$i]->product; ?>'})" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
 								Shop Now
 							</a>
 						</div>
 					</div>
 				</div>
-
-				<div class="item-slick1 item2-slick1" style="background-image: url(images/master-slide-02.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							As you wish presents
-						</span>
-
-						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInDown">
-							T-shirts
-						</h2>
-
-						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="fadeInDown">
-							<!-- Button -->
-							<a href="product_tees.php" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick1 item3-slick1" style="background-image: url(images/master-slide-03.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							As you wish presents
-						</span>
-
-						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" style="color:black;" data-appear="fadeInDown">
-							Cushions
-						</h2>
-
-						<div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="fadeInDown">
-							<!-- Button -->
-							<a href="product_cushion.php" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
-							</a>
-						</div>
-					</div>
-				</div>
-
+			<?php }
+			?>
 			</div>
 		</div>
 	</section>
@@ -117,7 +107,7 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="product_alphabet.php" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="javascript:getSelectedProductGet({product_selected:'Alphabets'})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Alphabets
 							</a>
 						</div>
@@ -129,7 +119,7 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="product_pendant.php" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="javascript:getSelectedProductGet({product_selected:'Pendants'})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Pendants
 							</a>
 						</div>
@@ -143,7 +133,7 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="product_photoframe.php" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="javascript:getSelectedProductGet({product_selected:'Photo Frames'})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Photo Frames
 							</a>
 						</div>
@@ -155,8 +145,8 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="product_keychains.php" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Key Chains
+							<a href="javascript:getSelectedProductGet({product_selected:'Key chains'})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Key chains
 							</a>
 						</div>
 					</div>
@@ -169,7 +159,7 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="product_cushion.php" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="javascript:getSelectedProductGet({product_selected:'Cushions'})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Cushions
 							</a>
 						</div>
@@ -181,7 +171,7 @@
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
-							<a href="product_shadowbox.php" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<a href="javascript:getSelectedProductGet({product_selected:'Shadow Box'})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Shadow Boxes
 							</a>
 						</div>
@@ -225,7 +215,7 @@
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<a href="<?php echo $SLIDER_2[$i]->link; ?>">
+										<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $SLIDER_2[$i]->product_selected; ?>'})">
 											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 												View more
 											</button>
@@ -235,12 +225,12 @@
 							</div>
 
 							<div class="block2-txt p-t-20">
-								<a href="<?php echo $SLIDER_2[$i]->link; ?>" class="block2-name dis-block s-text3 p-b-5">
+								<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $SLIDER_2[$i]->product_selected; ?>'})" class="block2-name dis-block s-text3 p-b-5">
 								<?php echo $SLIDER_2[$i]->product; ?>
 								</a>
 
 								<span class="block2-price m-text6 p-r-5">
-								<?php echo $SLIDER_2[$i]->cost; ?>
+								₹<?php echo $SLIDER_2[$i]->cost; ?>
 								</span>
 							</div>
 						</div>
@@ -269,9 +259,12 @@
 								In stock
 							</h3>
 
-							<a href="product_tees.html" class="s-text4 hov2 p-t-20 ">
+							<a href="javascript:getSelectedProductGet({product_selected:'T-shirts'})" class="s-text4 hov2 p-t-20 ">
 								View more
 							</a>
+							<span class="block2-newprice m-text8" style="color:white">
+							₹350 - 2000
+								</span>
 						</div>
 					</div>
 				</div>
@@ -282,16 +275,16 @@
 
 						<div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
 							<div class="t-center">
-								<a href="product_photoframe.html" class="dis-block m-text9 p-b-5" style="color:yellow">
+								<a href="javascript:getSelectedProductGet({product_selected:'Photo Frames'})" class="dis-block m-text9 p-b-5" style="color:yellow">
 									Photo Frames
 								</a>
 
-								<span class="block2-oldprice m-text7 p-r-5" style="color:yellow">
-									8000
-								</span>
+								<!-- <span class="block2-oldprice m-text7 p-r-5" style="color:yellow">
+								₹600 - 8000
+								</span> -->
 
 								<span class="block2-newprice m-text8" style="color:yellow">
-									6000
+								₹200 - 3000
 								</span>
 							</div>
 
@@ -363,7 +356,7 @@
 			<div class="block4 wrap-pic-w">
 				<img src="images/customer/<?php echo $CUSTOMER_REVIEW[$i]->file_name; ?>" alt="IMG-INSTAGRAM">
 
-				<a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
+				<a href="javascript:void(0)" class="block4-overlay sizefull ab-t-l trans-0-4">
 					<!-- <span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
 						<i class="icon_heart_alt fs-20 p-r-12" aria-hidden="true"></i>
 						<span class="p-t-2">39</span>
@@ -452,19 +445,19 @@
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
 	<script type="text/javascript">
-		$('.block2-btn-addcart').each(function () {
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function () {
-				swal(nameProduct, "is added to cart !", "success");
-			});
-		});
+		// $('.block2-btn-addcart').each(function () {
+		// 	var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+		// 	$(this).on('click', function () {
+		// 		swal(nameProduct, "is added to cart !", "success");
+		// 	});
+		// });
 
-		$('.block2-btn-addwishlist').each(function () {
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function () {
-				swal(nameProduct, "is added to wishlist !", "success");
-			});
-		});
+		// $('.block2-btn-addwishlist').each(function () {
+		// 	var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+		// 	$(this).on('click', function () {
+		// 		swal(nameProduct, "is added to wishlist !", "success");
+		// 	});
+		// });
 	</script>
 
 	<!--===============================================================================================-->

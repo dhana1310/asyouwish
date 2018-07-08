@@ -9,6 +9,31 @@
  $HELP_LIST = $option->HELP_LIST;
  ?>
 
+<script language="javascript"> 
+   		function getSelectedProductGet( params) {
+			path = "product.php";
+			method = "get"; // Set method to post by default if not specified.
+
+			var form = document.createElement("form");
+			form.setAttribute("method", method);
+			form.setAttribute("action", path);
+
+			for(var key in params) {
+				if(params.hasOwnProperty(key)) {
+					var hiddenField = document.createElement("input");
+					hiddenField.setAttribute("type", "hidden");
+					hiddenField.setAttribute("name", key);
+					hiddenField.setAttribute("value", params[key]);
+
+					form.appendChild(hiddenField);
+				}
+			}
+
+			document.body.appendChild(form);
+			form.submit();
+		}
+	</script>
+
 <!-- Footer -->
 <footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
 	<div class="flex-w p-b-90">
@@ -25,8 +50,8 @@
 				</p>
 
 				<div class="flex-m p-t-30">
-					<a href="<?php echo FB_LINK; ?>" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-					<a href="<?php echo INSTA_LINK; ?>" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+					<a href="<?php echo FB_LINK; ?>" class="fs-18 color1 p-r-20 fa fa-facebook" target="_blank"></a>
+					<a href="<?php echo INSTA_LINK; ?>" class="fs-18 color1 p-r-20 fa fa-instagram" target="_blank"></a>
 					<!-- <a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
 					<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
 					<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a> -->
@@ -45,7 +70,7 @@
 				for($i=0; $i < sizeof($PRODUCT_LIST_FOOTER_1); $i++){
 				?>
 				<li class="p-b-9">
-					<a href="<?php echo $PRODUCT_LIST_FOOTER_1[$i]->link; ?>" class="s-text7">
+					<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $PRODUCT_LIST_FOOTER_1[$i]->product; ?>'})" class="s-text7">
 					<?php echo $PRODUCT_LIST_FOOTER_1[$i]->product; ?>
 					</a>
 				</li>
@@ -64,7 +89,7 @@
 				for($i=0; $i < sizeof($PRODUCT_LIST_FOOTER_2); $i++){
 								?>
 				<li class="p-b-9">
-					<a href="<?php echo $PRODUCT_LIST_FOOTER_2[$i]->link; ?>" class="s-text7">
+					<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $PRODUCT_LIST_FOOTER_2[$i]->product; ?>'})" class="s-text7">
 					<?php echo $PRODUCT_LIST_FOOTER_2[$i]->product; ?>
 					</a>
 				</li>

@@ -7,6 +7,7 @@
  define("TAG_LINE", $option->TAG_LINE);
 
  $TABS = $option->TAB_LIST;
+ $MASTER_SLIDE = $option->MASTER_SLIDE;
  ?>
 
 <!-- Header -->
@@ -16,7 +17,7 @@
 			<div class="topbar">
 				<div class="topbar-social">
 					<a href="<?php echo FB_LINK; ?>" class="topbar-social-item fa fa-facebook" target="_blank"></a>
-					<a href="<?php echo INSTA_LINK; ?>" class="topbar-social-item fa fa-instagram"></a>
+					<a href="<?php echo INSTA_LINK; ?>" class="topbar-social-item fa fa-instagram" target="_blank"></a>
 					<!-- <a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
 					<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
 					<a href="#" class="topbar-social-item fa fa-youtube-play"></a> -->
@@ -47,7 +48,7 @@
 							for($i=0; $i < sizeof($TABS); $i++){
 								?>
 							<li class="sale-noti">
-								<a href="<?php echo $TABS[$i]->link; ?>"><?php echo $TABS[$i]->tab; ?></a>
+								<a href="<?php echo $TABS[$i]->link; ?>"><b><?php echo $TABS[$i]->tab; ?></b></a>
 								<!-- <ul class="sub_menu">
 									<li><a href="index.html">Homepage V1</a></li>
 									<li><a href="home-02.html">Homepage V2</a></li>
@@ -114,7 +115,7 @@
 								?>
 
 					<li class="item-menu-mobile">
-						<a href="<?php echo $TABS[$i]->link; ?>"><?php echo $TABS[$i]->tab; ?></a>
+						<a href="<?php echo $TABS[$i]->link; ?>"><b><?php echo $TABS[$i]->tab; ?></b></a>
 						<!-- <ul class="sub-menu">
 							<li><a href="index.html">Homepage V1</a></li>
 							<li><a href="home-02.html">Homepage V2</a></li>

@@ -40,6 +40,33 @@ $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
+
+	<script language="javascript"> 
+   	function getSelectedProductGet( params) {
+	path = "product.php";
+    method = "get"; // Set method to post by default if not specified.
+
+    var form = document.createElement("form");
+    form.setAttribute("method", method);
+    form.setAttribute("action", path);
+
+    for(var key in params) {
+        if(params.hasOwnProperty(key)) {
+            var hiddenField = document.createElement("input");
+            hiddenField.setAttribute("type", "hidden");
+            hiddenField.setAttribute("name", key);
+            hiddenField.setAttribute("value", params[key]);
+
+            form.appendChild(hiddenField);
+        }
+    }
+
+    document.body.appendChild(form);
+    form.submit();
+}
+
+</script>
+
 </head>
 
 <body class="animsition">
@@ -73,16 +100,24 @@ $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
 				<?php 
 
 				for($i=0; $i < sizeof($PRODUCTS_LIST_CATEGORIES); $i++){
+					$showActive = "";
+					if(isset($_GET['product_selected'])){
+						if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,$_GET['product_selected']) == 0) {
+							$showActive = "color: red";
+						}
+					}
+					
 				?>
 				<li class="p-t-4">
-					<form action="product.php" method="GET">
-						<input type="submit" class="s-text13 active1" name="product_selected" value="<?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?>">
-					</form>
+						<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?>'})" 
+							style="<?php echo $showActive; ?>"	class="s-text13">
+							<b><?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?></b>
+						</a>
 				</li>
 				<?php }
 				?>
 				</ul>
-
+					
 						<!--  -->
 						<!-- <h4 class="m-text14 p-b-32">
 							Filters
@@ -170,12 +205,12 @@ $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
 					<div class="row">
 							<?php 
 							for($i = 0; $i < sizeof($PRODUCTS_LIST_CATEGORIES) ; $i++){
+								
 								if(isset($_GET['product_selected'])){
 									if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,$_GET['product_selected']) != 0) {
 										continue;
 									}
 								} else {
-
 									if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,"Mugs") != 0) {
 										continue;
 									}
@@ -210,14 +245,14 @@ $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
 
 								<div class="block2-txt p-t-20">
 									<span class="block2-name dis-block s-text3 p-b-5" align="center">
-										<?php 
+									<b>	<?php 
 										if($j < 10){
 											echo $PRODUCTS_LIST_CATEGORIES[$i]->product_code.'0'.$j;
 										}
 										else{
 											echo $PRODUCTS_LIST_CATEGORIES[$i]->product_code.$j;
 										}
-										?>
+										?></b>
 									</span>
 								</div>
 							</div>

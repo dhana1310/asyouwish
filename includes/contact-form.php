@@ -49,8 +49,8 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
         // $a= print_r($mail,true);
         // echo $a;
-        //$mail->send();
-        header("Location: http://localhost/new_asyouwish/contact.html"); /* Redirect browser */
+        $mail->send();
+        //header("Location: http://localhost/new_asyouwish/contact.php"); /* Redirect browser */
         exit();
         echo 'Message has been sent';
     } catch (Exception $e) {

@@ -3,7 +3,7 @@
 	"INSTA_LINK": "https://www.instagram.com/my_asyouwish/",
 	"AS_YOU_WISH_MAIL": "asyouwish999s@gmail.com",
 	"TAG_LINE": "You Desire, We Deliver",
-	"MOBILE": "(+91) 86 97 458727",
+	"MOBILE": "(+91) 86 97 458727 , (+91) 96 81 107027",
 	"GOAL": "To satisfy the customer's requirement without any compromise on quality and services in the stipulated time.",
 	"HELP_LIST": [
 		{
@@ -33,70 +33,81 @@
 			"link": "contact.php"
 		}
 	],
+	"MASTER_SLIDE": [{},
+		{
+			"custom_style_caption1_slide1": "style=\"color:black;\"",
+			"custom_style_caption2_slide1":"style=\"color:black;\"",
+			"wrap_btn_slide1":"style=\"color:black;\"",
+			"product": "Mugs",
+			"file_name_prefix":"master-slide-",
+			"file_name_suffix":".jpg"
+		},
+		{
+			"custom_style_caption1_slide1": "",
+			"custom_style_caption2_slide1":"",
+			"wrap_btn_slide1":"",
+			"product": "T-shirts",
+			"file_name_prefix":"master-slide-",
+			"file_name_suffix":".jpg"
+		},
+		{
+			"custom_style_caption1_slide1": "",
+			"custom_style_caption2_slide1":"style=\"color:black;\"",
+			"wrap_btn_slide1":"",
+			"product": "Cushions",
+			"file_name_prefix":"master-slide-",
+			"file_name_suffix":".jpg"
+		}
+	],
 	"PRODUCT_LIST_FOOTER_1": [
 		{
-			"product": "Mugs",
-			"link": "product_mug.php"
+			"product": "Mugs"
 		},
 		{
-			"product": "Alphabets",
-			"link": "product_alphabet.php"
+			"product": "Alphabets"
 		},
 		{
-			"product": "Shadow Box",
-			"link": "product_shadowbox.php"
+			"product": "Shadow Box"
 		},
 		{
-			"product": "Cushions",
-			"link": "product_cushion.php"
+			"product": "Cushions"
 		},
 		{
-			"product": "T-shirts",
-			"link": "product_tees.php"
+			"product": "T-shirts"
 		},
 		{
-			"product": "PhotoFrames",
-			"link": "product_photoframe.php"
+			"product": "Photo Frames"
 		},
 		{
-			"product": "Bedsheets",
-			"link": "product_bedsheet.php"
+			"product": "Bedsheets"
 		}
 	],
 	"PRODUCT_LIST_FOOTER_2": [
 		{
-			"product": "Curtains",
-			"link": "product_curtain.php"
+			"product": "Curtains"
 		},
 		{
-			"product": "Pendants",
-			"link": "product_pendant.php"
+			"product": "Pendants"
 		},
 		{
-			"product": "Keychains",
-			"link": "product_keychains.php"
+			"product": "Key chains"
 		},
 		{
-			"product": "Wall Memories",
-			"link": "product_wallhanging.php"
+			"product": "Wall Memories"
 		},
 		{
-			"product": "Mobilecovers",
-			"link": "product_backcover.php"
+			"product": "Mobile covers"
 		},
 		{
-			"product": "Rings",
-			"link": "product_ring.php"
+			"product": "Rings"
 		},
 		{
-			"product": "Towels",
-			"link": "product_towel.php"
+			"product": "Towels"
 		}
 	],
 	"PRODUCTS_LIST_CATEGORIES": [
 		{
 			"product": "Mugs",
-			"link": "product_mug.php",
 			"folder":"mugs",
 			"file_name_prefix":"mug",
 			"file_name_suffix":"_720_960.jpg",
@@ -105,7 +116,6 @@
 		},
 		{
 			"product": "Alphabets",
-			"link": "product_alphabet.php",
 			"folder":"alphabets",
 			"file_name_prefix":"alphabets",
 			"file_name_suffix":"_720_960.jpg",
@@ -114,7 +124,6 @@
 		},
 		{
 			"product": "Shadow Box",
-			"link": "product_shadowbox.php",
 			"folder":"shadowboxes",
 			"file_name_prefix":"box",
 			"file_name_suffix":"_720_960.jpg",
@@ -123,7 +132,6 @@
 		},
 		{
 			"product": "Cushions",
-			"link": "product_cushion.php",
 			"folder":"pillows",
 			"file_name_prefix":"cushion",
 			"file_name_suffix":"_720_960.jpg",
@@ -132,7 +140,6 @@
 		},
 		{
 			"product": "T-shirts",
-			"link": "product_tees.php",
 			"folder":"tees",
 			"file_name_prefix":"tees",
 			"file_name_suffix":"_720_800.jpg",
@@ -140,8 +147,7 @@
 			"number_of_images": 24
 		},
 		{
-			"product": "PhotoFrames",
-			"link": "product_photoframe.php",
+			"product": "Photo Frames",
 			"folder":"photoframes",
 			"file_name_prefix":"photo_frames_",
 			"file_name_suffix":"_720_720.jpg",
@@ -150,7 +156,6 @@
 		},
 		{
 			"product": "Bedsheets",
-			"link": "product_bedsheet.php",
 			"folder":"bedsheets",
 			"file_name_prefix":"bedsheet",
 			"file_name_suffix":"_720_960.jpg",
@@ -159,7 +164,6 @@
 		},
 		{
 			"product": "Curtains",
-			"link": "product_curtain.php",
 			"folder":"curtains",
 			"file_name_prefix":"curtain",
 			"file_name_suffix":"_720_960.jpg",
@@ -168,7 +172,6 @@
 		},
 		{
 			"product": "Pendants",
-			"link": "product_pendant.php",
 			"folder":"pendants",
 			"file_name_prefix":"pendant",
 			"file_name_suffix":"_720_960.jpg",
@@ -176,8 +179,7 @@
 			"number_of_images": 8
 		},
 		{
-			"product": "Keychains",
-			"link": "product_keychains.php",
+			"product": "Key chains",
 			"folder":"keychains",
 			"file_name_prefix":"keychain",
 			"file_name_suffix":"_720_960.jpg",
@@ -186,7 +188,6 @@
 		},
 		{
 			"product": "Wall Memories",
-			"link": "product_wallhanging.php",
 			"folder":"wall_hangings",
 			"file_name_prefix":"wall_hanging_",
 			"file_name_suffix":"_720_800.jpg",
@@ -194,8 +195,15 @@
 			"number_of_images": 15
 		},
 		{
-			"product": "Mobilecovers",
-			"link": "product_backcover.php",
+			"product": "Wallet covers",
+			"folder":"wallets",
+			"file_name_prefix":"wallet_",
+			"file_name_suffix":"_720_960.jpg",
+			"product_code":"#WTC00",
+			"number_of_images": 15
+		},
+		{
+			"product": "Mobile covers",
 			"folder":"backcover",
 			"file_name_prefix":"backcover",
 			"file_name_suffix":"_720_960.jpg",
@@ -204,7 +212,6 @@
 		},
 		{
 			"product": "Rings",
-			"link": "product_ring.php",
 			"folder":"rings",
 			"file_name_prefix":"ring",
 			"file_name_suffix":"_720_960.jpg",
@@ -213,113 +220,132 @@
 		},
 		{
 			"product": "Towels",
-			"link": "product_towel.php",
 			"folder":"towels",
 			"file_name_prefix":"towel",
 			"file_name_suffix":"_720_960.jpg",
 			"product_code":"#TOW00",
 			"number_of_images": 9
+		},
+		{
+			"product": "Passport covers",
+			"folder":"passport_cover",
+			"file_name_prefix":"passport_cover_",
+			"file_name_suffix":"_800_800.jpg",
+			"product_code":"#PTC00",
+			"number_of_images": 7
 		}
 	],
 	"SLIDER_2":[
 		{
-			"product":"Mobile Covers",
-			"cost":"150 - 500",
-			"file_name":"backcover_720_960.jpg",
-			"link":"product_backcover.php"
+			"product":"Mobile covers",
+			"product_selected":"Mobile covers",
+			"cost":"200 - 700",
+			"file_name":"backcover_720_960.jpg"
+		},
+		{
+			"product":"Wallet covers",
+			"product_selected":"Wallet covers",
+			"cost":"400 - 1200",
+			"file_name":"wallet_720_960.jpg"
 		},
 		{
 			"product":"Customized Bedsheet",
-			"cost":"1000 - 2000",
-			"file_name":"bedsheet_720_960.jpg",
-			"link":"product_bedsheet.php"
+			"product_selected":"Bedsheets",
+			"cost":"2500 - 7000",
+			"file_name":"bedsheet_720_960.jpg"
 		},
 		{
 			"product":"Wooden Frame for your home",
-			"cost":"1000 - 2000",
-			"file_name":"wooden_frame_720_960.jpg",
-			"link":"product_photoframe.php"
+			"product_selected":"Photo Frames",
+			"cost":"200 - 3000",
+			"file_name":"wooden_frame_720_960.jpg"
 		},
 		{
 			"product":"Customized Ring",
-			"cost":"200 - 500",
-			"file_name":"ring_720_960.jpg",
-			"link":"product_ring.php"
+			"product_selected":"Rings",
+			"cost":"250 - 500",
+			"file_name":"ring_720_960.jpg"
 		},
 		{
 			"product":"Printed Tees",
-			"cost":"350 - 600",
-			"file_name":"valentines_special_tees_720_960.jpg",
-			"link":"product_tees.php"
+			"product_selected":"T-shirts",
+			"cost":"180 - 1500",
+			"file_name":"valentines_special_tees_720_960.jpg"
+		},
+		{
+			"product":"Passport covers",
+			"product_selected":"Passport covers",
+			"cost":"500 - 700",
+			"file_name":"passport_cover_720_960.jpg"
 		},
 		{
 			"product":"Customized towel",
-			"cost":"600 - 1000",
-			"file_name":"towel_720_960.jpg",
-			"link":"product_towel.php"
+			"product_selected":"Towels",
+			"cost":"350 - 900",
+			"file_name":"towel_720_960.jpg"
 		},
 		{
 			"product":"Curtains",
-			"cost":"500-2000",
-			"file_name":"curtain_720_960.jpg",
-			"link":"product_curtain.php"
+			"product_selected":"Curtains",
+			"cost":"2000-3000",
+			"file_name":"curtain_720_960.jpg"
 		},
 		{
 			"product":"Wall Hangings",
-			"cost":"1000 - 5000",
-			"file_name":"wall_hanging_720_960.jpg",
-			"link":"product_wallhanging.php"
+			"product_selected":"Wall Memories",
+			"cost":"500 - 2500",
+			"file_name":"wall_hanging_720_960.jpg"
 		}
 		
 	],
 	"CUSTOMER_REVIEW": [
 		{
-			"name": "SHRUTI",
+			"name": "Deepmala",
 			"comment": "It is amazing!!!!Magic mug is just wow",
 			"file_name": "customer_mug_960_960.jpg"
 		},
 		{
-			"name": "SHRUTI",
-			"comment": "My husband gifting these amazing gift. Thanks As You Wish!!!",
+			"name": "Prachi",
+			"comment": "My husband gifting these wonderful gift. Thanks As You Wish!!!",
 			"file_name": "customer_pillow_720_720.jpg"
 		},
 		{
-			"name": "SHRUTI",
-			"comment": "Completely amazing work..loved the cake on my bday..more special coz of the pic on it!! TASTE 5STAR LOOK 5 STAR Thankyou so much As You Wish",
+			"name": "Veenita",
+			"comment": "Completely incredible work..loved the cake on my bday..more special coz of the pic on it!! TASTE 5STAR LOOK 5 STAR Thankyou so much As You Wish",
 			"file_name": "customer_cake_579_579.jpg"
 		},
 		{
-			"name": "SHRUTI",
+			"name": "Srestha",
 			"comment": "Our fest tees ..just amazing work Thanks  As You Wish",
 			"file_name": "customer_tees_488_488.jpg"
 		},
 		{
-			"name": "SHRUTI",
+			"name": "Shruti",
 			"comment": "Thankyou to As You Wish Ceo for this wonderful bday gift.loved ittt!!!",
 			"file_name": "customer_mug_765_765.jpg"
 		},
 		{
-			"name": "SHRUTI",
-			"comment": "BFF tees on my friend's bday was amazing..Good work As You Wish",
+			"name": "Insha",
+			"comment": "BFF tees on my friend's bday was pretty awesome..Good work As You Wish",
 			"file_name": "customer_640_640.jpg"
 		},
 		{
-			"name": "SHRUTI",
+			"name": "Aksha",
 			"comment": "Thankyou to As u wish for such an amazing cake",
 			"file_name": "customer_562_562.jpg"
 		},
 		{
-			"name": "SHRUTI",
+			"name": "Shruti",
 			"comment": "Thankyou for this wonderful and cherishing pillow As u wish….Will cherish through lifetime.. I loved it .Its simply wowsome!!!",
 			"file_name": "customer_481_481.png"
 		},
 		{
-			"name": "SHRUTI",
+			"name": "Deepika",
 			"comment": "I am a regular customer of AS YOU WISH. ITS DELIVERABLES ARE ALL HAWTTT!!! SIMPLY WHAT A CUSTOMER DEMANDS.",
 			"file_name": "customer_cushion_540_540.jpg"
 		},
 		{
-			"name": "SHRUTI",
+			"name": "Apurva",
 			"comment": "It’s really wonderful..one kind of memory …Thankyou",
 			"file_name": "customer_863_863.jpg"
 		}

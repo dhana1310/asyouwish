@@ -54,7 +54,7 @@
 				</div>
 
 				<div class="col-md-6 p-b-30">
-					<form class="leave-comment" action="includes/contact-form.php" method="POST">
+					<form id="idForm" class="leave-comment">
 						<h4 class="m-text26 p-b-36 p-t-15">
 							Send us your message
 						</h4>
@@ -75,7 +75,7 @@
 
 						<div class="w-size25">
 							<!-- Button -->
-							<button type="submit" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
+							<button id="submitButtonId" type="submit" class="flex-c-m size2 bg1 bo-rad-23 hov1 m-text3 trans-0-4">
 								Send
 							</button>
 						</div>
@@ -114,19 +114,52 @@
 	
 
 	<script type="text/javascript">
-		$('.block2-btn-addcart').each(function(){
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
-			});
+		
+		function validateEmail(email) {
+    		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    		return re.test(String(email).toLowerCase());
+		}
+		function validatePhoneNumber(number) {
+    		var re = /^\d{10}$/;
+    		return re.test(number);
+		}
+
+		$("#submitButtonId").click(function() {	
+			var name = document.forms["idForm"]["name"].value;
+			var mobile = document.forms["idForm"]["phonenumber"].value;
+			var email = document.forms["idForm"]["email"].value;
+			var message = document.forms["idForm"]["message"].value;
+    		if (name == "") {
+        		alert("Name is required!!");
+        		return false;
+    		}
+			if(mobile == "" || !validatePhoneNumber(mobile)){
+				alert("Mobile number is Invalid!!");
+				return false;
+			}
+			if(!validateEmail(email)){
+				alert("Email is Invalid!!");
+        		return false;
+			}
+			if(message == ""){
+				alert("Message is empty!!");
+        		return false;
+			}
+			$.ajax({
+	  			type: "POST",
+	   			url: "includes/contact-form.php",
+	   			data: $("#idForm").serialize(), // serializes the form's elements.
+	   			success: function(data)
+	   			{
+		   			//alert(data); // show response from the php script.
+					swal("Message sent", "Thanks for your input!!!", "success");
+	   			}
+	 		});
+
+		return false; // avoid to execute the actual submit of the form.
 		});
 
-		$('.block2-btn-addwishlist').each(function(){
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
-			});
-		});
+
 	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script> 
