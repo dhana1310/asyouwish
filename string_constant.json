@@ -12,7 +12,7 @@
 		},
 		{
 			"type": "FAQs",
-			"link": "word/AsYouWishFAQs.docx"
+			"link": "word/AsYouWishFAQs.pdf"
 		}
 	],
 	"TAB_LIST": [
@@ -35,12 +35,31 @@
 	],
 	"MASTER_SLIDE": [{},
 		{
-			"custom_style_caption1_slide1": "style=\"color:black;\"",
-			"custom_style_caption2_slide1":"style=\"color:black;\"",
-			"wrap_btn_slide1":"style=\"color:black;\"",
-			"product": "Mugs",
+			"custom_style_caption1_slide1": "",
+			"custom_style_caption2_slide1":"",
+			"wrap_btn_slide1":"",
+			"product": "Rakhi",
 			"file_name_prefix":"master-slide-",
-			"file_name_suffix":".jpg"
+			"file_name_suffix":".jpg",
+			"type":"seasonal"
+		},
+		{
+			"custom_style_caption1_slide1": "",
+			"custom_style_caption2_slide1":"",
+			"wrap_btn_slide1":"",
+			"product": "Rakhi and Cushion",
+			"file_name_prefix":"master-slide-",
+			"file_name_suffix":".jpg",
+			"type":"seasonal"
+		},
+		{
+			"custom_style_caption1_slide1": "",
+			"custom_style_caption2_slide1":"",
+			"wrap_btn_slide1":"",
+			"product": "Photo Frames",
+			"file_name_prefix":"master-slide-",
+			"file_name_suffix":".jpg",
+			"type":"daily"
 		},
 		{
 			"custom_style_caption1_slide1": "",
@@ -48,15 +67,26 @@
 			"wrap_btn_slide1":"",
 			"product": "T-shirts",
 			"file_name_prefix":"master-slide-",
-			"file_name_suffix":".jpg"
+			"file_name_suffix":".jpg",
+			"type":"daily"
 		},
 		{
 			"custom_style_caption1_slide1": "",
-			"custom_style_caption2_slide1":"style=\"color:black;\"",
+			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
-			"product": "Cushions",
+			"product": "Mobile covers",
 			"file_name_prefix":"master-slide-",
-			"file_name_suffix":".jpg"
+			"file_name_suffix":".jpg",
+			"type":"daily"
+		},
+		{
+			"custom_style_caption1_slide1": "",
+			"custom_style_caption2_slide1":"",
+			"wrap_btn_slide1":"",
+			"product": "Alphabets",
+			"file_name_prefix":"master-slide-",
+			"file_name_suffix":".jpg",
+			"type":"daily"
 		}
 	],
 	"PRODUCT_LIST_FOOTER_1": [
@@ -103,6 +133,24 @@
 		},
 		{
 			"product": "Towels"
+		}
+	],
+	"SEASONALS": [
+		{
+			"product": "Rakhi",
+			"folder":"seasonals/rakhi",
+			"file_name_prefix":"rakhi_",
+			"file_name_suffix":"_800_800.jpg",
+			"product_code":"#RAK00",
+			"number_of_images": 21
+		},
+		{
+			"product": "Rakhi and Cushion",
+			"folder":"seasonals/rakhi",
+			"file_name_prefix":"rakhi_",
+			"file_name_suffix":"_800_800.jpg",
+			"product_code":"#RAK00",
+			"number_of_images": 21
 		}
 	],
 	"PRODUCTS_LIST_CATEGORIES": [

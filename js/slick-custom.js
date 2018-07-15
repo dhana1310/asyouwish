@@ -25,15 +25,15 @@
 
             action1[0] = setTimeout(function(){
                 $(cap1Slide1[0]).addClass($(cap1Slide1[0]).data('appear') + ' visible-true');
-            },200);
+            },0);
 
             action2[0] = setTimeout(function(){
                 $(cap2Slide1[0]).addClass($(cap2Slide1[0]).data('appear') + ' visible-true');
-            },1000);
+            },0);
 
             action3[0] = setTimeout(function(){
                 $(btnSlide1[0]).addClass($(btnSlide1)[0].data('appear') + ' visible-true');
-            },1800);              
+            },1800);                
         });
 
 
@@ -46,7 +46,7 @@
             dotsClass:'slick1-dots',
             infinite: true,
             autoplay: true,
-            autoplaySpeed: 6000,
+            autoplaySpeed: 3000,
             arrows: true,
             appendArrows: $('.wrap-slick1'),
             prevArrow:'<button class="arrow-slick1 prev-slick1"><i class="fa  fa-angle-left" aria-hidden="true"></i></button>',

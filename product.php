@@ -3,6 +3,7 @@ $string = file_get_contents("string_constant.json");
 $option = json_decode($string);
 
 $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
+$SEASONALS = $option->SEASONALS;
 ?>
 
 <!DOCTYPE html>
@@ -91,32 +92,54 @@ $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
 				<div class="col-sm-6 col-md-4 col-lg-3 p-b-50">
 					<div class="leftbar p-r-20 p-r-0-sm">
 						<!--  -->
+
+						<h4 class="m-text14 p-b-7">
+							Seasonals
+						</h4>
+
+						<ul class="p-b-15">
+							<?php 
+							for($i=0; $i < sizeof($SEASONALS); $i++){
+								$showActive = "";
+								if(isset($_GET['product_selected'])){
+									if(strcmp($SEASONALS[$i]->product,$_GET['product_selected']) == 0) {
+										$showActive = "color: red";
+									}
+								}?>
+								<li class="p-t-4">
+										<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $SEASONALS[$i]->product; ?>',type:'seasonal'})" 
+											style="<?php echo $showActive; ?>"	class="s-text13">
+											<b><?php echo $SEASONALS[$i]->product; ?></b>
+										</a>
+								</li>
+							<?php }
+							?>
+						</ul>
+
 						<h4 class="m-text14 p-b-7">
 							Categories
 						</h4>
 
-						<ul class="p-b-54">
+						<ul class="p-b-15">
+							<?php 
+							for($i=0; $i < sizeof($PRODUCTS_LIST_CATEGORIES); $i++){
+								$showActive = "";
+								if(isset($_GET['product_selected'])){
+									if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,$_GET['product_selected']) == 0) {
+										$showActive = "color: red";
+									}
+								}?>
+								<li class="p-t-4">
+										<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?>',type:'daily'})" 
+											style="<?php echo $showActive; ?>"	class="s-text13">
+											<b><?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?></b>
+										</a>
+								</li>
+							<?php }
+							?>
+						</ul>
 
-				<?php 
-
-				for($i=0; $i < sizeof($PRODUCTS_LIST_CATEGORIES); $i++){
-					$showActive = "";
-					if(isset($_GET['product_selected'])){
-						if(strcmp($PRODUCTS_LIST_CATEGORIES[$i]->product,$_GET['product_selected']) == 0) {
-							$showActive = "color: red";
-						}
-					}
-					
-				?>
-				<li class="p-t-4">
-						<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?>'})" 
-							style="<?php echo $showActive; ?>"	class="s-text13">
-							<b><?php echo $PRODUCTS_LIST_CATEGORIES[$i]->product; ?></b>
-						</a>
-				</li>
-				<?php }
-				?>
-				</ul>
+						
 					
 						<!--  -->
 						<!-- <h4 class="m-text14 p-b-32">
@@ -200,10 +223,16 @@ $PRODUCTS_LIST_CATEGORIES = $option->PRODUCTS_LIST_CATEGORIES;
 
 				<div class="col-sm-6 col-md-8 col-lg-9 p-b-50">
 					<!--  -->
+					
 
 					<!-- Product -->
 					<div class="row">
-							<?php 
+						<?php 
+							if(isset($_GET['type'])){
+								if($_GET['type'] === 'seasonal'){
+									$PRODUCTS_LIST_CATEGORIES = $SEASONALS;
+								}
+							}
 							for($i = 0; $i < sizeof($PRODUCTS_LIST_CATEGORIES) ; $i++){
 								
 								if(isset($_GET['product_selected'])){

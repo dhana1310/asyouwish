@@ -74,18 +74,17 @@
 			?>
 				<div class="item-slick1 item1-slick1" style="background-image: url(images/master_slide/<?php echo $MASTER_SLIDE[$i]->file_name_prefix.$i.$MASTER_SLIDE[$i]->file_name_suffix ?>);">
 					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" <?php echo $MASTER_SLIDE[$i]->custom_style_caption1_slide1 ?> data-appear="fadeInDown">
+						<!-- <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" <?php echo $MASTER_SLIDE[$i]->custom_style_caption1_slide1 ?> data-appear="fadeInDown">
 							As you wish presents
 						</span>
 
 						<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" <?php echo $MASTER_SLIDE[$i]->custom_style_caption2_slide1 ?> data-appear="fadeInDown">
-						<?php echo $MASTER_SLIDE[$i]->product ?>
-						</h2>
+						<?php //echo $MASTER_SLIDE[$i]->product ?>
+						</h2> -->
 
 						<div class="wrap-btn-slide1 w-size1 animated visible-false" <?php echo $MASTER_SLIDE[$i]->wrap_btn_slide1 ?> data-appear="fadeInDown">
-							<!-- Button -->
-							<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $MASTER_SLIDE[$i]->product; ?>'})" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
-								Shop Now
+							<a href="javascript:getSelectedProductGet({product_selected:'<?php echo $MASTER_SLIDE[$i]->product; ?>',type:'<?php echo $MASTER_SLIDE[$i]->type; ?>'})" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+								View more								
 							</a>
 						</div>
 					</div>
