@@ -39,7 +39,7 @@
 			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
 			"product": "Rakhi",
-			"file_name_prefix":"master-slide-",
+			"file_name_prefix":"master_slide_",
 			"file_name_suffix":".jpg",
 			"type":"seasonal"
 		},
@@ -48,7 +48,7 @@
 			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
 			"product": "Rakhi and Cushion",
-			"file_name_prefix":"master-slide-",
+			"file_name_prefix":"master_slide_",
 			"file_name_suffix":".jpg",
 			"type":"seasonal"
 		},
@@ -57,7 +57,7 @@
 			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
 			"product": "Photo Frames",
-			"file_name_prefix":"master-slide-",
+			"file_name_prefix":"master_slide_",
 			"file_name_suffix":".jpg",
 			"type":"daily"
 		},
@@ -66,7 +66,7 @@
 			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
 			"product": "T-shirts",
-			"file_name_prefix":"master-slide-",
+			"file_name_prefix":"master_slide_",
 			"file_name_suffix":".jpg",
 			"type":"daily"
 		},
@@ -75,7 +75,7 @@
 			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
 			"product": "Mobile covers",
-			"file_name_prefix":"master-slide-",
+			"file_name_prefix":"master_slide_",
 			"file_name_suffix":".jpg",
 			"type":"daily"
 		},
@@ -84,7 +84,7 @@
 			"custom_style_caption2_slide1":"",
 			"wrap_btn_slide1":"",
 			"product": "Alphabets",
-			"file_name_prefix":"master-slide-",
+			"file_name_prefix":"master_slide_",
 			"file_name_suffix":".jpg",
 			"type":"daily"
 		}
@@ -146,11 +146,11 @@
 		},
 		{
 			"product": "Rakhi and Cushion",
-			"folder":"seasonals/rakhi",
-			"file_name_prefix":"rakhi_",
-			"file_name_suffix":"_800_800.jpg",
-			"product_code":"#RAK00",
-			"number_of_images": 21
+			"folder":"seasonals/rakhi_cushion",
+			"file_name_prefix":"special_rakhi_cushion_",
+			"file_name_suffix":".jpeg",
+			"product_code":"#RKC00",
+			"number_of_images": 9
 		}
 	],
 	"PRODUCTS_LIST_CATEGORIES": [

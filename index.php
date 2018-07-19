@@ -5,6 +5,32 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style> 
+	/* @media only screen and (min-width:320px)  { .body1 {
+	max-width: 100%;
+	height: auto !important;
+  } }
+	@media only screen and (min-width:481px)  { .body1 {
+	max-width: 100%;
+	height: auto;
+  }}
+	@media only screen and (min-width:641px)  {.body1 {
+	max-width: 100%;
+	height: auto;
+  }}
+	@media only screen and (min-width:961px)  {.body1 {
+	max-width: 100%;
+	height: auto;
+  } }
+	@media only screen and (min-width:1025px) { .body1 {
+	max-width: 100%;
+	height: auto;
+  }}
+	@media only screen and (min-width:1281px) { .body1 {
+	max-width: 100%;
+	height: auto;
+  } } */
+	</style>
 	<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
 	<!--===============================================================================================-->
@@ -64,7 +90,7 @@
 <body class="animsition">
 
 	<?php include 'header.php'; ?>
-
+	<!-- <div class="body1"> hello world</div> -->
 	<!-- Slide1 -->
 	<section class="slide1">
 		<div class="wrap-slick1">
