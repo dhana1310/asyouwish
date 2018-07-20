@@ -10,7 +10,7 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
 
  define("MAIL_HOST", $option->MAIL_HOST);
  define("MAIL_ID", $option->MAIL_ID);
- define("MAIL_PASSWORD", $option->MAIL_PASSWORD);
+ //define("MAIL_PASSWORD", $option->MAIL_PASSWORD);
 
 if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
 
